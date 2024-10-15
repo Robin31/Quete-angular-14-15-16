@@ -1,0 +1,62 @@
+<form class="card flex justify-content-center">
+  <div class="card flex justify-content-center">
+    <div>
+      <input
+        type="text"
+        placeholder="Nom"
+        pInputText
+        [formControl]="username"
+      />
+    </div>
+    <div>
+      <input
+        type="text"
+        placeholder="Email"
+        pInputText
+        [formControl]="email"
+      />
+    </div>
+    <div>
+      <input
+        type="text"
+        placeholder="Mot de passe"
+        pInputText
+        [formControl]="password"
+      />
+    </div>
+    <div>
+      <input
+        type="text"
+        placeholder="Rue"
+        pInputText
+        [formControl]="street"
+      />
+    </div>
+    <div>
+      <input
+        type="text"
+        placeholder="Code postal"
+        pInputText
+        [formControl]="zipCode"
+      />
+    </div>
+    <div>
+      <input
+        type="text"
+        placeholder="Ville"
+        pInputText
+        [formControl]="city"
+      />
+    </div>
+    <div class="card flex justify-content-center">
+      <p-button type="reset" label="coucou" (click)="submit()" />
+    </div>
+  </div>
+</form>
+<div>
+  <ul>
+    @if (user){
+    <li>{{ user | json }}</li>
+    }
+  </ul>
+</div>

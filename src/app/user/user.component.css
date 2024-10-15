@@ -1,0 +1,13 @@
+form {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+div {
+    padding-top: 6%;
+}
+
+p-button {
+    justify-content: center;
+}
